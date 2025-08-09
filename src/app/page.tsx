@@ -65,7 +65,7 @@ export default function Home() {
         style={{
           position: 'absolute',
           // top: '450px', 
-          bottom: '23rem',           // ← ここを基準に固定（数値は好みで微調整）
+          bottom: '24rem',           // ← ここを基準に固定（数値は好みで微調整）
           left: '50%',
           transform: 'translateX(-50%)',
 
@@ -75,7 +75,6 @@ export default function Home() {
           boxShadow: '0 0 8px rgba(0,0,0,0.1)',
           maxWidth: '80%',
 
-          // ここから見た目/挙動
           display: 'inline-block',   // 内容に合わせてサイズ決定（上に伸びる）
           fontSize: '1.2rem',
           lineHeight: 1.7,
