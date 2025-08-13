@@ -36,9 +36,39 @@ export default function Home() {
   }, [])
 
   return (
-    <div
+            <div
+          style={{
+            position: 'relative',
+            minHeight: '100vh',
+            fontFamily: '"M PLUS Rounded 1c", sans-serif',
+            textAlign: 'center',
+            overflow: 'hidden', // 背景はみ出し防止
+          }}
+        >
+        {/* 背景動画 */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: '50%',
+            transform: 'translateX(-50%)',
+            minWidth: '100%',
+            maxWidth: '1920px', // 横幅の上限
+            height: '100%',
+            objectFit: 'cover',
+            zIndex: -1, // 背景にする
+          }}
+        >
+          <source src="/背景動画.mp4" type="video/mp4" />
+        </video>
+    {/* <div
       style={{
-        backgroundImage: "url('/祠背景.png')",
+        // backgroundImage: "url('/祠背景.png')",
+        backgroundImage: "url('/祠ラフ.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -47,8 +77,9 @@ export default function Home() {
         fontFamily:
           '"M PLUS Rounded 1c","Hiragino Maru Gothic ProN","Yu Gothic UI",sans-serif',
         textAlign: 'center',
+        overflow: 'hidden',
       }}
-    >
+    > */}
       <h1
         style={{
           fontSize: '3.5rem',
